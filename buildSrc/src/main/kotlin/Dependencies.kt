@@ -15,6 +15,7 @@ object Versions {
     const val Retrofit = "2.9.0"
     const val OkHttp = "4.2.1"
     const val Reactor = "3.4.6"
+    const val Exposed = "0.17.13"
 }
 
 object Plugins { // please keep this sorted in sections
@@ -110,6 +111,11 @@ object Dependencies {
 
     // Database
     val Postgres = DependencySpec("org.postgresql:postgresql", "42.2.19")
+
+    // ORM
+    object Exposed {
+        val Core = DependencySpec("org.jetbrains.exposed:exposed", Versions.Exposed)
+    }
 
     val KotlinLogging = DependencySpec("io.github.microutils:kotlin-logging-jvm", Versions.KotlinLogging)
 

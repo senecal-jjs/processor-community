@@ -35,6 +35,8 @@ dependencies {
         Dependencies.Retrofit.ScalarsConverter,
         Dependencies.OkHttp.Core,
         Dependencies.OkHttp.LoggingInterceptor,
+        Dependencies.Exposed.Core,
+        Dependencies.Postgres,
         // Needed to play nice with WebFlux Coroutines stuff
         Dependencies.Reactor.Core,
         Dependencies.KotlinLogging,
