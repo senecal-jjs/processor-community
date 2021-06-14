@@ -37,6 +37,8 @@ dependencies {
         Dependencies.OkHttp.LoggingInterceptor,
         Dependencies.Exposed.Core,
         Dependencies.Postgres,
+        Dependencies.Hikari,
+        Dependencies.Jwts,
         // Needed to play nice with WebFlux Coroutines stuff
         Dependencies.Reactor.Core,
         Dependencies.KotlinLogging,

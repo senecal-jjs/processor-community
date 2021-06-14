@@ -16,6 +16,8 @@ object Versions {
     const val OkHttp = "4.2.1"
     const val Reactor = "3.4.6"
     const val Exposed = "0.17.13"
+    const val Jwt = "0.11.2"
+    const val Hikari = "3.4.5"
 }
 
 object Plugins { // please keep this sorted in sections
@@ -111,11 +113,14 @@ object Dependencies {
 
     // Database
     val Postgres = DependencySpec("org.postgresql:postgresql", "42.2.19")
+    val Hikari = DependencySpec("com.zaxxer:HikariCP", Versions.Hikari)
 
     // ORM
     object Exposed {
         val Core = DependencySpec("org.jetbrains.exposed:exposed", Versions.Exposed)
     }
+
+    val Jwts = DependencySpec("io.jsonwebtoken:jjwt-api", Versions.Jwt)
 
     val KotlinLogging = DependencySpec("io.github.microutils:kotlin-logging-jvm", Versions.KotlinLogging)
 

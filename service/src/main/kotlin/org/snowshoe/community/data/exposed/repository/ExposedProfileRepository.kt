@@ -4,8 +4,10 @@ import org.jetbrains.exposed.sql.transactions.transaction
 import org.snowshoe.community.data.exposed.table.ProfileRecord
 import org.snowshoe.community.data.model.Profile
 import org.snowshoe.community.data.repository.ProfileRepository
+import org.springframework.stereotype.Component
 import java.util.UUID
 
+@Component
 class ExposedProfileRepository : ProfileRepository {
     override fun fetch(id: UUID): Profile? {
         return transaction {

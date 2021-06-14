@@ -22,6 +22,10 @@ data class Profile(
         return username
     }
 
+    fun getId(): UUID {
+        return id
+    }
+
     override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
         return authorities
     }
